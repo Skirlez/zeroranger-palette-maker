@@ -1,6 +1,7 @@
 
 function reset_color(colorslot, color) {
 	colorslot.clr = color
+	instance_destroy(colorslot.myreset)
 	colorslot.myreset = noone
 	with (global.colorpicker) {
 		var hue = color_get_hue(color)
