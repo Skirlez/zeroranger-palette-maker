@@ -2,6 +2,12 @@ var w = room_width
 var h = room_height
 
 
+if global.clicklevel == 1 {
+	draw_set_color(c_black)
+	draw_set_alpha(0.9)
+	draw_rectangle(0, 0, 640, 360, false)	
+	draw_set_alpha(1)
+}
 
 if !gotcolorbuffer  {
 	var colorwidth = sprite_get_width(spr_hsv_pickhue) 
@@ -18,3 +24,4 @@ if !gotcolorbuffer  {
 	
 	gotcolorbuffer = true
 }
+

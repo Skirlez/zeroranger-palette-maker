@@ -1,4 +1,5 @@
 if clicked() {
+	play_sound(snd_button)
 	deselect_colors()
 	with obj_colorslot {
 		set_palette(global.palette)

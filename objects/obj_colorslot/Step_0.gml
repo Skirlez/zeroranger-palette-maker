@@ -1,6 +1,7 @@
 if clicked() {
 	deselect_reset()
 	if changing == false {
+		play_sound(snd_buttonhigh)
 		instance_destroy(global.colorpicker)
 		with obj_colorslot
 			changing = false
@@ -11,6 +12,7 @@ if clicked() {
 		changing = true
 	}
 	else {
+		play_sound(snd_buttonlow)
 		instance_destroy(global.colorpicker)
 		global.colorpicker = noone
 		changing = false

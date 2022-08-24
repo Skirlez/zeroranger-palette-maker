@@ -9,3 +9,5 @@ myreset = noone
 colorhue = 255
 colorsaturation = 255
 colorvalue = 255
+
+depth = -100

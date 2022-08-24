@@ -1,16 +1,15 @@
 {
-  "name": "obj_mousebox",
   "spriteId": {
     "name": "spr_mouse",
     "path": "sprites/spr_mouse/spr_mouse.yy",
   },
-  "spriteMaskId": null,
-  "visible": true,
   "solid": false,
-  "persistent": false,
-  "physicsObject": false,
+  "visible": false,
   "managed": true,
+  "spriteMaskId": null,
+  "persistent": false,
   "parentObjectId": null,
+  "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
   "physicsGroup": 1,
@@ -33,6 +32,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
+  "name": "obj_mousebox",
   "tags": [],
   "resourceType": "GMObject",
 }

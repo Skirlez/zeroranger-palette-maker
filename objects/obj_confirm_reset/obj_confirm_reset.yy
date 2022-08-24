@@ -1,14 +1,17 @@
 {
   "spriteId": {
-    "name": "spr_confirm_reset",
-    "path": "sprites/spr_confirm_reset/spr_confirm_reset.yy",
+    "name": "spr_confirm",
+    "path": "sprites/spr_confirm/spr_confirm.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_button",
+    "path": "objects/obj_button/obj_button.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

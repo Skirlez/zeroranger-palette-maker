@@ -1,4 +1,5 @@
 if clicked() {
-	instance_destroy(spr_confirm_reset)
+	play_sound(snd_buttonlow)
+	instance_destroy(obj_confirm_reset)
 	instance_destroy(id)
 }
