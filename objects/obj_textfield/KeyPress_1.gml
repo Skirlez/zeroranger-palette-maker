@@ -17,6 +17,7 @@ if selected == true and instance_exists(global.colorpicker) {
 	
 		if string_length(global.textfield[textid]) <= 2 {
 			if digit != "" {
+				play_sound(snd_moveslider)
 				if global.textfield[textid] = "0"
 					global.textfield[textid] = ""
 					

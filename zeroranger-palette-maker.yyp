@@ -43,6 +43,7 @@
     {"id":{"name":"obj_enablefullscreen","path":"objects/obj_enablefullscreen/obj_enablefullscreen.yy",},"order":18,},
     {"id":{"name":"obj_instructionsbutton","path":"objects/obj_instructionsbutton/obj_instructionsbutton.yy",},"order":8,},
     {"id":{"name":"snd_buttonhigh","path":"sounds/snd_buttonhigh/snd_buttonhigh.yy",},"order":2,},
+    {"id":{"name":"obj_previewcyclearrow","path":"objects/obj_previewcyclearrow/obj_previewcyclearrow.yy",},"order":21,},
     {"id":{"name":"obj_hsv_rgb_toggle","path":"objects/obj_hsv_rgb_toggle/obj_hsv_rgb_toggle.yy",},"order":20,},
     {"id":{"name":"obj_confirm_reset","path":"objects/obj_confirm_reset/obj_confirm_reset.yy",},"order":11,},
     {"id":{"name":"obj_palettecyclearrow","path":"objects/obj_palettecyclearrow/obj_palettecyclearrow.yy",},"order":14,},

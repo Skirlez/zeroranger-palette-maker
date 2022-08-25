@@ -1,4 +1,6 @@
-draw_self()
+
+var blend = make_color_hsv(255, 0, colorslot.colorvalue)
+draw_sprite_ext(sprite_index, 0, x, y, image_xscale, image_yscale, 0, blend, 1)
 draw_sprite_ext(spr_hsv_pickhueborder, 0, x, y, image_xscale, image_yscale, 0, c_white, 1)
 if clicked() 
 	choosing = true
