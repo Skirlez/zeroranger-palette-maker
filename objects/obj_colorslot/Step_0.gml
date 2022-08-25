@@ -24,10 +24,13 @@ if changing == true {
 	global.palette_array[colornum][0] = color_get_red(clr) / 255
 	global.palette_array[colornum][1] = color_get_green(clr) / 255
 	global.palette_array[colornum][2] = color_get_blue(clr) / 255
-	
 	if clr != defaultclr and myreset == noone {
 		myreset = instance_create_depth(x, y - 32, depth - 1, obj_resetcolorbutton)
 		myreset.colorslot = id
+	}
+	else if clr == defaultclr and myreset != noone {
+		instance_destroy(myreset)
+		myreset = noone
 	}
 }
 else {
@@ -37,3 +40,7 @@ else {
 	}
 }
 
+
+
+	if keyboard_check(ord("A")) and place_meeting(x, y, obj_mousebox)
+		show_debug_message(clr != defaultclr)

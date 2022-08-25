@@ -9,7 +9,8 @@ global.colorpicker = noone
 gotcolorbuffer = false
 global.colorbuffer = -1
 global.palette = 0
-global.palettename = "THIS TEXT WILL BE OVERRIDEN BY THE FUNCTION BELOW. HELLO, ANYONE WHO HAPPENS TO BE SEEING THIS!"
+global.palettename = "THIS TEXT WILL BE OVERRIDEN BY THE FUNCTION BELOW. HELLO, ANYONE WHO HAPPENS TO BE SEEING THIS! THIS CODE IS NOT VERY GOOD!"
+
 set_palette(global.palette)
 
 global.clicklevel = 0

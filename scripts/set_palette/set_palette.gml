@@ -457,15 +457,39 @@ function set_palette(palette_num, name_only = false) {
 		    colarray[8] = 16377781
 		    colarray[9] = 16777215
 			break;
+
+
 	}
-	if name_only == false {
+	// this sucks
+	if name_only {
+		var length = array_length(global.palette_array)
 		for (var i = 0; i < 10; i++) {
-	        global.palette_array[i][0] = (colour_get_blue(colarray[i]) / 255)
-	        global.palette_array[i][1] = (colour_get_green(colarray[i]) / 255)
-	        global.palette_array[i][2] = (colour_get_red(colarray[i]) / 255)
-	    }
+			temparray[i][0] = 0
+			temparray[i][1] = 0
+			temparray[i][2] = 0
+		}
+	}
+	
+	for (var i = 0; i < 10; i++) {
+		if name_only 
+			array_copy(temparray[i], 0, global.palette_array[i], 0, length)
+	    global.palette_array[i][0] = (colour_get_blue(colarray[i]) / 255)
+	    global.palette_array[i][1] = (colour_get_green(colarray[i]) / 255)
+	    global.palette_array[i][2] = (colour_get_red(colarray[i]) / 255)
+	}
+	
+	with (obj_colorslot) {
+		if name_only == true
+			event_user(0)
+		else
+			update = true
+	}
+	
+	if name_only {
+		for (var i = 0; i < 10; i++) {
+			array_copy(global.palette_array[i], 0, temparray[i], 0, length)
+		}
 	}
 	global.palettename = palet_name
-	with (obj_colorslot)
-		update = true
+
 }

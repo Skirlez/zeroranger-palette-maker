@@ -21,7 +21,6 @@ if selected == true and instance_exists(global.colorpicker) {
 				if global.textfield[textid] = "0"
 					global.textfield[textid] = ""
 					
-				show_debug_message(wipestring)
 				global.textfield[textid] += digit
 			}
 			if global.textfield[textid] != "" {
