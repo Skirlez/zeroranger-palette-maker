@@ -15,7 +15,7 @@ From here there are two methods: I recommend the script method as it is faster a
 In case it doesn't work out, there is always the manual method.
 
 SCRIPT METHOD:
-This method uses a custom script I've written for UMT to replace the sprite. It is located inside the Palette Maker's install folder. (InsertZeroRangerPalette.csx)
+This method uses a custom script I've written for UndertaleModTool to replace the sprite. It is located inside the Palette Maker's install folder. (InsertZeroRangerPalette.csx)
 
 In UndertaleModTool, either at the top go to Scripts > Run other script... and select the .csx file or just drag it into the window.
 Follow the instructions that pop up and after finishing, save and replace ZeroRanger's data.win.
@@ -40,8 +40,8 @@ From there just launch the game and you should be able to switch to your palette
 UNCAPPING PALETTE SELECTION:
 This is a bonus guide on uncapping palette selection to be able to add your palette and not replace an existing one/to view unused palettes.
 
-If you would like to add a palette, simply add a new Switch case with the next free ID above the default case and paste the export button text to it .
-(Remember to add a break statement! if you don't, you'll just get the color of the palette below yours). 
+If you would like to add a palette, open up set_palette() in UndertaleModTool and simply add a new Switch case with the next free ID above the default case and paste the export button text to it .
+(Remember to add a break statement! if you don't, you'll just get default colors). 
 Then you must go to the object controller_options' User Event 2 (aka Other_12) to around line 180, and you need to modify this bit of code:
 
 if (global.realm_reseted <= 0)
