@@ -19,7 +19,7 @@ depth = -5000
 string_cheat = ""
 global.debug = false
 
-global.enablesounds = true
+global.enablesounds = false
 
 global.textfield[0] = "0"
 global.textfield[1] = "0"

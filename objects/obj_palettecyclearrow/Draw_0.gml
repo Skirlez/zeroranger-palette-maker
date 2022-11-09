@@ -6,5 +6,6 @@ if image_xscale > 0 {
 	draw_set_valign(fa_middle)
 	draw_text(x + 32, y - 32, "Default Palette:")
 	draw_text(x + 32, y, global.palette)
-	draw_text(x + 32, y + 32, "\"" + global.palettename + "\"")
+	var str = global.palette == 777 ? global.palettename : "\"" + global.palettename + "\""
+	draw_text(x + 32, y + 32, str)
 }

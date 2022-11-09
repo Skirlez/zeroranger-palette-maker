@@ -445,7 +445,7 @@ function set_palette(palette_num, name_only = false) {
 		    colarray[9] = 16777215
 		    break
 		case 777:
-			palet_name = "Missing Name"
+			palet_name = "Missing name"
 		    colarray[0] = 0
 		    colarray[1] = 0
 		    colarray[2] = 11861

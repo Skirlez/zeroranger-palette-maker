@@ -13,7 +13,7 @@ if (Data?.GeneralInfo?.DisplayName?.Content.ToLower() != "zeroranger")
     return;
 }
 
-String palette = SimpleTextInput("Text input box", "Enter the output from ZeroRanger palette maker (and change their name if you wish)", "", true);
+String palette = SimpleTextInput("Text input box", "Enter the output from ZeroRanger palette maker (and change the palette name if you wish)", "", true);
 ScriptMessage("You will now be asked to enter the palette's name you'd like to replace. All palette names can be viewed from the palette maker's options menu. You shouldn't replace anything higher than ID 5, since you wouldn't be able to access it.");
 String name = SimpleTextInput("Text input box", "Enter the name of the palette you'd like to replace", "", false).Replace("\"", "");
 SyncBinding("Strings, Variables, Functions", true);
