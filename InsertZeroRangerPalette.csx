@@ -14,8 +14,18 @@ if (Data?.GeneralInfo?.DisplayName?.Content.ToLower() != "zeroranger")
 }
 
 String palette = SimpleTextInput("Text input box", "Enter the output from ZeroRanger palette maker (and change the palette name if you wish)", "", true);
+if (palette == "") {
+	ScriptError("Error 1: Empty input!");
+	return;
+}
+palette += "\nbreak;";
+
 ScriptMessage("You will now be asked to enter the palette's name you'd like to replace. All palette names can be viewed from the palette maker's options menu. You shouldn't replace anything higher than ID 5, since you wouldn't be able to access it.");
 String name = SimpleTextInput("Text input box", "Enter the name of the palette you'd like to replace", "", false).Replace("\"", "");
+if (name == "") {
+	ScriptError("Error 1: Empty input!");
+	return;
+}
 SyncBinding("Strings, Variables, Functions", true);
 var success = false;
 await Task.Run(() => {
@@ -24,7 +34,7 @@ await Task.Run(() => {
 	// Get start and end of the specific palette switch case
 	var startPos = txt.IndexOf("palet_name = \"" + name + "\"");
 	if (startPos == -1) {
-		ScriptError("Error 1: Could not locate the palette you wanted to replace!");
+		ScriptError("Error 2: Could not locate the palette you wanted to replace!");
 		return;
 	}
 	
